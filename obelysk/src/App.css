@@ -5,18 +5,40 @@
   text-align: center;
 }
 
+.container {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  gap: 12px; /* espacio entre logo y texto */
+}
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 8em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.footer {
+  position: fixed;       /* Se queda fijo */
+  bottom: 0;             /* Pegado abajo */
+  left: 0;
+  width: 100%;           /* Ocupa todo el ancho */
+  text-align: center;    /* Centra el texto */
+  padding: 10px;
+  color: #ffffff;
+  font-size: 14px;
 }
+
 
 @keyframes logo-spin {
   from {
